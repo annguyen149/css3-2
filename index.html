@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad1198f46c.js" crossorigin="anonymous"></script>
+    <title>CSS3</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+    float: left;
+    top: 0;
+}
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gainsboro;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+p a {
+  background-color: red;
+  width: 250px;
+  padding: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+p a:hover {
+  background-color: rgb(244, 175, 175);
+}
+
+.new {
+    display: inline-block;
+    border: 1px solid gainsboro;
+    padding: 10px ;
+    width: 400px;
+    height: 500px;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: gainsboro;
+}
+
+img.relative {
+  width: 100%;
+  height: 500px;
+  border: 1px solid gainsboro;
+  background-color: gainsboro;
+  display: inline-block;
+} 
+
+.img {
+    text-align: center;
+    font-size: 25px;
+}
+
+.img1 {
+    text-align: center;
+    font-size: 50px;
+    color:orangered;
+}
+
+h4 a {
+    text-decoration: none;
+    color: black;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    float: right;
+    margin-right: 50px;
+}
+
+h4 a:hover {
+    background-color: gray;
+}
+
+.macc {
+    display: inline-block;
+    border: 1px solid gainsboro;
+    padding: 10px ;
+    width: 340px;
+    height: 550px;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: gainsboro;
+}
+
+.hot {
+    border: 1px solid red;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    width: 80px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+</style>
+</head>
+<body>
+    <div>
+    <div style="float: right;">
+        <ul>
+            <li> <a href=""> Return </a> </li>
+            <li> <a href=""> Help </a>  </li>
+            <li> <a href=""> Register / Sign in  </a> </li>
+        </ul>
+    </div>
+    <br><br><br><br>
+    <hr>
+    <div style="float: right;">
+        <ul style="font-size: 25px;">
+            <li> <a href="" > SHOP </a> </li> 
+            <li> <a href="" > ESSENTIAL </a></li>
+            <li> <a href="" > <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Macc%20Essentials.png" alt="Logo" style="width:100%;height:100%;"> </a></li>
+            <li> <a href="" > BEST SELLERS </a></li>
+            <li> <a href=""> ABOUT US </a></li>
+            <li> <a href="" > <i class="fa-solid fa-user"></i> </a> </li>
+            <li > <a href="" > <i class="fa-solid fa-bell"></i>  </a> </li>
+            <li > <a href="" > <i class="fa-sharp fa-solid fa-bag-shopping"></i> </a> </li>
+        </ul>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-7 col-s-7" style="background-color: gainsboro;padding: 86px 70px;">
+            <h1 style="font-size: 60px;"> PROVIDING SERVICES AT YOUR DOOR </h1>
+            <p style="font-size: 30px;"> <strong>MACC Essentials </strong> has an important role in making supplies and services available to customes and their patients during this critical time. This includes services from various domains. Our aim is to aid you. As much we can. </p> <br>
+            <p style="margin-top: 80px;"> <a href="">LEARN MORE</a> <p>
+        </div>
+        <div class="col-5 col-s-5" style="background-color: gainsboro;padding: 30px 20px;" >
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Feature_img1%20(1).png" alt="A boy" style="width:100%;height:100%;">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="img1"> NEW PRODUCTS </h1>
+        </div>
+        <div class="new"> 
+            <p style="border: 1px solid red;background-color: red;width: 120px; padding: 5px;color: white;"> TOP SELLER </p>
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img.png" alt="facemask" style="padding-left:30px;">
+            <p class="img"><strong>Face Masks</strong> </p>
+        </div>
+        <div class="new">
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img%20(1).png" alt="bodyspray" style="padding-top: 60px; padding-left: 30px;">
+            <p class="img"><strong>Body Spray</strong> </p>
+        </div>
+        <div class="new">
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img%20(2).png" alt="Stayfree" style="padding-top: 100px; padding-left: 40px;" >
+            <p class="img"><strong>Stay Free Ultra Pad</strong> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 col-s-5">
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Feature_img1.png" alt="phone" style="width:100%;height:100%;">
+        </div>
+        <div class="col-7 col-s-7">
+            <div>
+                <h4> <a href=""> VIEW ALL </a>  </h4>
+                <h2 style="color: orangered; font-size: 40px;"> MACC WEEKLY DISCOUNT </h2>
+            </div>
+            <div>
+            <div class="macc">
+                <p class="hot"> 20% OFF </p>
+                <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img%20(1).png" alt="bodyspray">
+                <p class="img"><b> Body Spray </b></p>
+                <p class="img"> <del><span class="fa-sharp fa-solid fa-indian-rupee-sign"></span> 500 </del> <span class="fa-sharp fa-solid fa-indian-rupee-sign"></span> 400 </p>
+            </div>
+            <div class="macc"> 
+                <p class="hot"> 40% OFF </p>
+                <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img%20(2).png" alt="Stayfree" style="padding-top: 40px;">
+                <p class="img"> <b> Stay Free Ultra Pad </b> </p>
+                <p class="img"> <del> <span class="fa-sharp fa-solid fa-indian-rupee-sign"></span>400 </del> <span class="fa-sharp fa-solid fa-indian-rupee-sign"></span> 250 </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7 col-s-7">
+            <div>
+                <h4> <a href=""> VIEW ALL </a> </h4>
+                <h2 style="color: orangered; font-size: 40px; margin-left: 50px;"> MACC TOP SELLINGS </h2>
+            </div>
+            <div class="macc">
+                <p class="hot"> 20% OFF </p>
+                <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img%20(1).png" alt="bodyspray">
+                <p class="img"><b> Body Spray </b> </p>
+                <p class="img"> <span class="fa-sharp fa-solid fa-indian-rupee-sign"></span> 400 </p>
+            </div>
+            <div class="macc"> 
+                <p class="hot"> 40% OFF </p>
+                <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Product_img.png" alt="facemask">
+                <p class="img"><b>Face Masks </b> </p>
+                <p class="img"><span class="fa-sharp fa-solid fa-indian-rupee-sign"></span> 400 </p>
+            </div>
+        </div>
+        <div class="col-5 col-s-5" style="margin-bottom: 20px;">
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Feature_img1%20(1).png" alt="smilema" style="width:100%;height:100%;">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <h1 style="color:orangered;font-size: 40px;"> COVID-19 GUIDELINES </h1>
+        <p style="font-size: 30px;margin-left: 20%;margin-right: 20%;"> Please remember to adhere all covid-19 guidelines. Precaution is key to survive this pandemic. Stay at home and Stay safe. </p> <br>
+    </div>
+    <div class="row" style="font-size: 25px;">
+        <div class="col-3 col-s-3">
+            <img src="https://raw.githubusercontent.com/huyhaq/html_lab_1_ecommerge/main/image/Macc%20Essentials.png" alt="Logo" style="margin-left: 50px;">
+        </div>
+        <div class="col-2 col-s-2">
+            <ul>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Collection </a> </li>
+                <li> <a href=""> Products </a> </li>
+            </ul>
+        </div>
+        <div class="col-2 col-s-2">
+            <ul>
+                <li> <a href=""> About </a> </li>
+                <li> <a href=""> Contact </a> </li>
+                <li> <a href=""> FAQ </a> </li>
+            </ul>
+        </div>
+        <div class="col-4 col-s-4" style="margin-left: 50px;">
+            <p> Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>
+            <ul>
+                <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href=""><i class="fa-sharp fa-solid fa-info"></i></a></li>
+                <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
